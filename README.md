@@ -86,7 +86,7 @@ utilização, basta utilizar os comandos abaixo:
 *Instalação da cwltool*
 
 ``` shell
-pip install cwltool 
+pip install cwltool cwlref-runner
 ```
 
 *Execução do workflow CWL*

@@ -54,7 +54,7 @@ Para fazer a execução, basta realizar utilizar uma engine de execução do CWL
 *Instalação da cwltool*
 
 ```shell
-pip install cwltool 
+pip install cwltool cwlref-runner
 ```
 
 *Execução do workflow CWL*
