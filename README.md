@@ -14,7 +14,7 @@ da metodologia apresentada em:
 > `CBERS Data Cube: A powerful technology for mapping and monitoring brazilian biomes`.
 > ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial
 > Information Sciences, XXIV ISPRS Congress (2020 edition)
-> &lt;10.5194/isprs-annals-V-3-2020-533-2020&gt;
+> [10.5194/isprs-annals-V-3-2020-533-2020](https://doi.org/10.5194/isprs-annals-V-3-2020-533-2020)
 
 ## Conteúdo
 

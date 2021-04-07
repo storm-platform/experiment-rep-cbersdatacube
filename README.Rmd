@@ -20,7 +20,7 @@ Repositório com um `Executable Research Compendium` para a geração de mapas d
 
 Este artigo contém o código e o *workflow* necessário para a replicação da metodologia apresentada em:
 
-> Picoli *et al*, (2020). `CBERS Data Cube: A powerful technology for mapping and monitoring brazilian biomes`. ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XXIV ISPRS Congress (2020 edition) <10.5194/isprs-annals-V-3-2020-533-2020>
+> Picoli *et al*, (2020). `CBERS Data Cube: A powerful technology for mapping and monitoring brazilian biomes`. ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XXIV ISPRS Congress (2020 edition) [10.5194/isprs-annals-V-3-2020-533-2020](https://doi.org/10.5194/isprs-annals-V-3-2020-533-2020)
 
 ## Conteúdo
 
