@@ -6,6 +6,7 @@
 *data/derived_data/bricks/*
 *data/derived_data/rasters/*
 data/derived_data/cb4_features.json
+*data/derived_data/cubes_vegetation_index/*
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
