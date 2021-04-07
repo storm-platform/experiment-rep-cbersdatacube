@@ -2,9 +2,9 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=r,python,jupyternotebooks
 
 # expensive files
-data/derived_data/vrt/
-data/derived_data/bricks/
-data/derived_data/rasters/
+*data/derived_data/vrt/*
+*data/derived_data/bricks/*
+*data/derived_data/rasters/*
 data/derived_data/cb4_features.json
 
 ### JupyterNotebooks ###
