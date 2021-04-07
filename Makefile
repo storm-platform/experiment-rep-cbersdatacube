@@ -9,6 +9,6 @@ createbrick:
 classifybrick:
 	cwl-runner cwl/workflows/lulc-classification.cwl cwl/input/lulc-classification-job.yml
 	mv lulc_maps/ data/derived_data/
-	mv 01_ClassifyBrick_Generated.ipynb data/derived_data
+	mv 01_ClassifyBrick_Generated.ipynb data/derived_data/lulc_maps
 
 replicate: getdata createbrick classifybrick
