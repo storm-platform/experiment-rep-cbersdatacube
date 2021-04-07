@@ -1,0 +1,19 @@
+
+#
+# STAC Search
+#
+bdc_stac_search_limit: 50
+bdc_stac_search_bbox: "-53.1958,-18.1041,-48.9111,-16.2991"
+bdc_stac_search_datetime: "2018-09-01/2019-08-31"
+
+#
+# STAC Parameters
+#
+bdc_access_token: ""
+bdc_stac_collection: "CB4_64_16D_STK-1"
+bdc_stac_url: "https://brazildatacube.dpi.inpe.br/stac/"
+
+#
+# output file
+#
+output_file: "cb4_features.json"

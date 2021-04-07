@@ -1,0 +1,17 @@
+Package: rep.cbersdatacube
+Title: rep.CBERS Data Cube
+Version: 0.1
+Authors@R: 
+    person(given = "Felipe",
+           family = "Carlos",
+           role = c("aut", "cre"),
+           email = "felipe.carlos@inpe.br")
+Description: Research Compendium da replicação do artigo CBERS Data Cube: A powerful
+            technology for mapping and monitoring brazilian biomes 
+            (https://doi.org/10.5194/isprs-annals-V-3-2020-533-2020 |)
+License: MIT + file LICENSE
+ByteCompile: true
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1

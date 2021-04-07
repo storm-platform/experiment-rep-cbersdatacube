@@ -1,0 +1,61 @@
+#
+# step 1
+#
+notebook_step1:
+  class: File
+  path: ../../analysis/brick-creation/1_GenerateVRT.ipynb
+
+notebook_out: 1_GenerateVRT_Generated.ipynb
+
+stac_file:
+  class: File
+  path: ../../data/derived_data/cb4_features.json
+
+vrt_out_path: output/vrt
+kernel_spec_step1: python3
+
+#
+# step 2
+#
+notebook_step2:
+  class: File
+  path: ../../analysis/brick-creation/2_CropByShape.ipynb
+
+notebook_out_step2: 2_CropByShape_Generated.ipynb
+
+shp_filename: samples.shp
+shp_directory:
+  class: Directory
+  path: ../../data/raw_data/samples/
+
+kernel_spec_step2: python3
+output_raster_path: output/rasters/
+
+#
+# step 3
+#
+notebook_step3:
+  class: File
+  path: ../../analysis/brick-creation/3_GenerateCubeIndex.ipynb
+
+output_cubes_vegetation_index: "output/cubes_vegetation_index"
+
+kernel_spec_step3: python3
+notebook_out_step3: 3_GenerateCubeIndex_Generated.ipynb
+
+factor: 10000
+na_values: -9999
+
+#
+# step 4
+#
+notebook_step4:
+  class: File
+  path: ../../analysis/brick-creation/4_GenerateBricks.ipynb
+
+output_cubebrick: "output/bricks"
+
+kernel_spec_step4: python3
+notebook_out_step4: 4_GenerateBricks_Generated.ipynb
+
+collection_name: "CB4_64_16D_STK-1"

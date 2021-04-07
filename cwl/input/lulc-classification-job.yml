@@ -1,0 +1,47 @@
+#
+# general
+#
+notebook:
+  class: File
+  path: ../../analysis/brick-classification/01_ClassifyBrick.ipynb
+
+output_dir: lulc_maps
+notebook_out: 01_ClassifyBrick_Generated.ipynb
+
+#
+# computational resources
+#
+memsize: 1
+multicores: 4
+
+#
+# algorithm configuration
+#
+num_trees: 1000
+smoothing: "bayes"
+
+#
+# samples configuration
+#
+shp_filename: samples.shp
+shp_class_attribute: label
+
+shp_directory:
+  class: Directory
+  path: ../../data/raw_data/samples/
+
+#
+# brick configurations
+#
+bands: "B13,EVI,B14,NDVI,B16,B15,GEMI,GNDVI,NDWI2,PVR"
+timeline: "2018-08-29,2018-09-14,2018-09-30,2018-10-16,2018-11-01,2018-11-17,2018-12-03,2018-12-19,2019-01-01,2019-01-17,2019-02-02,2019-02-18,2019-03-06,2019-03-22,2019-04-07,2019-04-23,2019-05-09,2019-05-25,2019-06-10,2019-06-26,2019-07-12,2019-07-28,2019-08-13,2019-08-29"
+bricks_names: "CB4_64_16D_STK-1_BAND13_brick.tif,CB4_64_16D_STK-1_EVI_brick.tif,CB4_64_16D_STK-1_BAND14_brick.tif,CB4_64_16D_STK-1_NDVI_brick.tif,CB4_64_16D_STK-1_BAND16_brick.tif,CB4_64_16D_STK-1_BAND15_brick.tif,CB4_64_16D_STK-1_GEMI_brick.tif,CB4_64_16D_STK-1_GNDVI_brick.tif,CB4_64_16D_STK-1_NDWI2_brick.tif,CB4_64_16D_STK-1_PVR_brick.tif"
+
+bricks_dir:
+  class: Directory
+  path: ../../data/derived_data/bricks/
+
+#
+# kernel
+#
+kernel_spec: ir
