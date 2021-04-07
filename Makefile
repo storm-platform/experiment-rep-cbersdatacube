@@ -8,3 +8,5 @@ createbrick:
 
 classifybrick:
 	cwl-runner cwl/workflows/lulc-classification.cwl cwl/input/lulc-classification-job.yml
+
+replicate: getdata createbrick classifybrick
