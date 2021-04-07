@@ -36,24 +36,34 @@ O diretório **analysis** contém:
     extraídas dos **Rasters Bricks**, associadas a um conjunto de
     amostras disponibilizada pelos autores do artigo que está sendo
     replicado;
--   [:file\_folder: data](/data): Diretório com os conjuntos de dados
-    utilizados. O diretório contém inicialmente apenas os dados de
-    amostra. Todos os demais dados são gerados durante a execução dos
-    scripts.
--   [:file\_folder: environment](/environment): `Docker Images` conténdo
-    os ambientes computacionais, com os requisitos necessários para a
-    execução e reprodução desta replicação
--   [:file\_folder: library](/library): Biblioteca de código escrita na
-    linguagem Python, com todas as funções auxiliares utilizadas para a
-    organização e processamento dos dados. Esta biblioteca é consumida
-    pelos Jupyter Notebooks dos diretórios `brick-creation` e
-    `brick-classification`.
--   [:file\_folder: cwl](/cwl): Para tornar mais fácil a execução,
-    reprodução e possívelmente distribuição do fluxo de trabalho
-    desenvolvido para a replicação, todas as etapas são escritas
-    utilizando a **C**ommon **W**orkflow **L**anguage (CWL). Este
-    diretório contém todos os *workflows*, *tools* e *inputs* definidos
-    para a reprodução deste trabalho.
+
+O diretório **library** contém:
+
+-   [:file\_folder: rep\_cbers\_cube](/library/rep_cbers_cube):
+    Biblioteca de código escrita na linguagem Python, com todas as
+    funções auxiliares utilizadas para a organização e processamento dos
+    dados. Esta biblioteca é consumida pelos Jupyter Notebooks dos
+    diretórios `brick-creation` e `brick-classification`.
+
+O diretório **environment** contém:
+
+-   [:file\_folder: R/Python Images](/environment): `Docker Images`
+    conténdo os ambientes computacionais, com os requisitos necessários
+    para a execução e reprodução desta replicação
+
+O diretório **cwl** contém:
+
+-   [:file\_folder: input/tools/workflows](/cwl): Para tornar mais fácil
+    a execução, reprodução e possívelmente distribuição do fluxo de
+    trabalho desenvolvido para a replicação, todas as etapas são
+    escritas utilizando a **C**ommon **W**orkflow **L**anguage (CWL).
+    Este diretório contém todos os *workflows*, *tools* e *inputs*
+    definidos para a reprodução deste trabalho.
+
+Por fim, no diretório **data** estão os conjuntos de dados utilizados
+nos \*scripts\*\*. O diretório contém inicialmente apenas os dados de
+amostra. Todos os demais dados são gerados durante a execução dos
+scripts.
 
 ## Como fazer a execução
 
@@ -65,8 +75,8 @@ declarados no diretório [environment](/environment).
 > **Python**, estão disponíveis scripts `build.sh` que realizam a
 > criação das imagens para a execução. Atualmente há disponível no
 > DockerHub, ambas as imagens já prontas para uso, nos repositórios:
-> [https://hub.docker.com/r/m3nin0/rep-cbers-dc-r](rep-cbers-dc-r) e
-> [https://hub.docker.com/r/m3nin0/rep-cbers-dc-python](rep-cbers-dc-python).
+> [rep-cbers-dc-r](https://hub.docker.com/r/m3nin0/rep-cbers-dc-r) e
+> [rep-cbers-dc-python](https://hub.docker.com/r/m3nin0/rep-cbers-dc-python).
 
 Para fazer a execução, basta realizar utilizar uma engine de execução do
 CWL. O script `Makefile`, contém instruções para a utilização da engine
