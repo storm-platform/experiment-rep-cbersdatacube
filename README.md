@@ -61,7 +61,7 @@ O diretório **cwl** contém:
     definidos para a reprodução deste trabalho.
 
 Por fim, no diretório **data** estão os conjuntos de dados utilizados
-nos \*scripts\*\*. O diretório contém inicialmente apenas os dados de
+nos *scripts*. O diretório contém inicialmente apenas os dados de
 amostra. Todos os demais dados são gerados durante a execução dos
 scripts.
 

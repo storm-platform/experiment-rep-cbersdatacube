@@ -41,7 +41,7 @@ O diretório **cwl** contém:
 
   - [:file\_folder: input/tools/workflows](/cwl): Para tornar mais fácil a execução, reprodução e possívelmente distribuição do fluxo de trabalho desenvolvido para a replicação, todas as etapas são escritas utilizando a **C**ommon **W**orkflow **L**anguage (CWL). Este diretório contém todos os *workflows*, *tools* e *inputs* definidos para a reprodução deste trabalho.
 
-Por fim, no diretório **data** estão os  conjuntos de dados utilizados nos *scripts**. O diretório contém inicialmente apenas os dados de amostra. Todos os demais dados são gerados durante a execução dos scripts.
+Por fim, no diretório **data** estão os  conjuntos de dados utilizados nos *scripts*. O diretório contém inicialmente apenas os dados de amostra. Todos os demais dados são gerados durante a execução dos scripts.
 
 ## Como fazer a execução
 
