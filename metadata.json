@@ -48,8 +48,6 @@
     "rights": [
       {
         "rights": "Creative Commons 4.0",
-        "scheme": "spdx",
-        "identifier": "cc-by-4.0",
         "uri": "https://creativecommons.org/licenses/by/4.0/"
       }
     ],
