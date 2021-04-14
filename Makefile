@@ -1,4 +1,7 @@
 getdata:
+	sed -i 's/bdc_access_token: ""/bdc_access_token: '$BDC_ACCESS_TOKEN'/g' \
+		cwl/input/lulc-cubefiles-reference-job.yml
+
 	cwl-runner cwl/workflows/lulc-cubefiles-reference.cwl cwl/input/lulc-cubefiles-reference-job.yml
 	mv cb4_features.json data/derived_data
 
