@@ -26,7 +26,7 @@ notebook_out_step2: 2_CropByShape_Generated.ipynb
 shp_filename: samples.shp
 shp_directory:
   class: Directory
-  path: ../../data/raw_data/samples/
+  path: ../../data/raw_data/samples_bdc-article/
 
 kernel_spec_step2: python3
 output_raster_path: output/rasters/

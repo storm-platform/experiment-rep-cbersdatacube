@@ -28,7 +28,7 @@ shp_class_attribute: label
 
 shp_directory:
   class: Directory
-  path: ../../data/raw_data/samples/
+  path: ../../data/raw_data/samples_bdc-article/
 
 #
 # brick configurations

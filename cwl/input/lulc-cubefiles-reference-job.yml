@@ -3,7 +3,7 @@
 # STAC Search
 #
 bdc_stac_search_limit: 50
-bdc_stac_search_bbox: "-53.1958,-18.1041,-48.9111,-16.2991"
+bdc_stac_search_bbox: "-47.4829,-14.1366,-42.3413,-11.5016"
 bdc_stac_search_datetime: "2018-09-01/2019-08-31"
 
 #

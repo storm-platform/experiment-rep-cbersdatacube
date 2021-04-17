@@ -3,6 +3,11 @@
 
 [![rc](https://img.shields.io/badge/research%20compendium-ready-brightgreen)](#)
 
+> **Nota**: Este é um exemplo de como um ERC pode ser utilizado para a
+> replicação. Para isso, os parâmetros utilizados representam a área de
+> estudo e as amostras do artigo “Earth Observation Data Cubes for
+> Brazil: Requirements, Methodology and Products”
+
 Repositório com um `Executable Research Compendium` para a geração de
 mapas de Uso e Cobertura da Terra utilizando Cubos de dados de imagens
 de Sensoriamento Remoto.
@@ -10,24 +15,24 @@ de Sensoriamento Remoto.
 Este artigo contém o código e o *workflow* necessário para a replicação
 da metodologia apresentada em:
 
-> Picoli *et al*, (2020).
-> `CBERS Data Cube: A powerful technology for mapping and monitoring brazilian biomes`.
-> ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial
-> Information Sciences, XXIV ISPRS Congress (2020 edition)
+> Picoli *et al*, (2020). `CBERS Data Cube: A powerful technology for
+> mapping and monitoring brazilian biomes`. ISPRS Annals of the
+> Photogrammetry, Remote Sensing and Spatial Information Sciences, XXIV
+> ISPRS Congress (2020 edition)
 > [10.5194/isprs-annals-V-3-2020-533-2020](https://doi.org/10.5194/isprs-annals-V-3-2020-533-2020)
 
 ## Conteúdo
 
 O diretório **analysis** contém:
 
--   [:file\_folder: brick-creation](/analysis/brick-creation): Jupyter
+  - [:file\_folder: brick-creation](/analysis/brick-creation): Jupyter
     Notebok para a preparação dos dados para a classificação.
     Inicialmente o script realiza o *download* e recorte das cenas
     considerando uma região de interesse. Em seguida são calculados os
     índices espectrais EVI, GEMI, GNDVI, NDWI2 e PVR. Por fim, cada um
     dos *rasters* gerados são organizados no tempo, em arquivos únicos,
     formando **Raster Bricks** para a classificação;
--   [:file\_folder:
+  - [:file\_folder:
     brick-classification](/analysis/brick-classification):
     Jupyter-Notebooks para a classificação. Consumindo dos **Raster
     Bricks** criados com os scripts do `brick-creation`, os dados são
@@ -39,21 +44,21 @@ O diretório **analysis** contém:
 
 O diretório **library** contém:
 
--   [:file\_folder: rep\_cbers\_cube](/library/rep_cbers_cube):
+  - [:file\_folder: rep\_cbers\_cube](/library/rep_cbers_cube):
     Biblioteca de código escrita na linguagem Python, com todas as
-    funções auxiliares utilizadas para a organização e processamento dos
-    dados. Esta biblioteca é consumida pelos Jupyter Notebooks dos
+    funções auxiliares utilizadas para a organização e processamento
+    dos dados. Esta biblioteca é consumida pelos Jupyter Notebooks dos
     diretórios `brick-creation` e `brick-classification`.
 
 O diretório **environment** contém:
 
--   [:file\_folder: R/Python Images](/environment): `Docker Images`
+  - [:file\_folder: R/Python Images](/environment): `Docker Images`
     conténdo os ambientes computacionais, com os requisitos necessários
     para a execução e reprodução desta replicação
 
 O diretório **cwl** contém:
 
--   [:file\_folder: input/tools/workflows](/cwl): Para tornar mais fácil
+  - [:file\_folder: input/tools/workflows](/cwl): Para tornar mais fácil
     a execução, reprodução e possívelmente distribuição do fluxo de
     trabalho desenvolvido para a replicação, todas as etapas são
     escritas utilizando a **C**ommon **W**orkflow **L**anguage (CWL).
@@ -95,7 +100,11 @@ pip install cwltool cwlref-runner
 make replicate
 ```
 
-> **Note** que para a replicação, é necessário adicionar a variável de ambiente `BDC_ACCESS_TOKEN`. Após isto, a execução está pronta para ser realizada.
+> **Note** que para a replicação, é necessário que no arquivo
+> [cwl/input/lulc-cubefiles-reference-job.yml](cwl/input/lulc-cubefiles-reference-job.yml)
+> será inserida a chave de acesso ao aos serviços do projeto Brazil Data
+> Cube, na variável `bdc_access_token`. Isto é necessário já que os
+> dados utilizados são disponibilizados pelo projeto.
 
 ### Licenses
 
