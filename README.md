@@ -1,5 +1,5 @@
 
-# rep.cbersdatacube
+# Experimento - Replicação CBERS Data Cube
 
 [![rc](https://img.shields.io/badge/research%20compendium-ready-brightgreen)](#)
 
