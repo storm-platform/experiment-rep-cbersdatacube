@@ -9,20 +9,24 @@ knitr::opts_chunk$set(
   fig.path = "README-"
 )
 
-Title <- "rep.CBERS Data Cube"
+Title <- "Compendium de reutilização"
 ```
 
-# rep.cbersdatacube
+# Earth Observation Data Cubes for Brazil - Compendium de replicação
 
 [![rc](https://img.shields.io/badge/research%20compendium-ready-brightgreen)](#)
 
-> **Nota**: Este é um exemplo de como um ERC pode ser utilizado para a replicação. Para isso, os parâmetros utilizados representam a área de estudo e as amostras do artigo "Earth Observation Data Cubes for Brazil: Requirements, Methodology and Products"
+Repositório com um `Executable Research Compendium` (ERC) para a geração de mapas de Uso e Cobertura da Terra utilizando Cubos de dados de imagens de Sensoriamento Remoto.
 
-Repositório com um `Executable Research Compendium` para a geração de mapas de Uso e Cobertura da Terra utilizando Cubos de dados de imagens de Sensoriamento Remoto.
-
-Este artigo contém o código e o *workflow* necessário para a replicação da metodologia apresentada em:
+Os códigos e o *workflow* presentes neste ERC, foram originalmente criados para a replicação da metodologia apresentada em:
 
 > Picoli *et al*, (2020). `CBERS Data Cube: A powerful technology for mapping and monitoring brazilian biomes`. ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XXIV ISPRS Congress (2020 edition) [10.5194/isprs-annals-V-3-2020-533-2020](https://doi.org/10.5194/isprs-annals-V-3-2020-533-2020)
+
+Com a generalização dos *scripts* geradas através do uso das ferramentas de *workflow* e da organização dos materiais em um ERC, notou-se a possibilidade de aplicação do ERC para outros contextos de classificação. Considerando isto, esta versão reutilizada, faz a aplicação dos códigos e o *workflow* para a classificação da região de estudo apresentada no estudo de caso do artigo:
+
+> Ferreira *et al*, (2020). `Earth Observation Data Cubes for Brazil: Requirements, Methodology and Products`. Remote Sens. 2020, 12, 4033.  [https://doi.org/10.3390/rs12244033](https://doi.org/10.3390/rs12244033)
+
+Para isso, fez-se a troca dos dados de entrada no *workflow* considerando as amostras e região de estudo apresentados no artigo de Ferreira *et al*. (2020). Os passos para execução são exatamente os mesmos apresentados no ERC original.
 
 ## Conteúdo
 
@@ -66,6 +70,13 @@ make replicate
 ```
 
 > **Note** que para a replicação, é necessário que no arquivo [cwl/input/lulc-cubefiles-reference-job.yml](cwl/input/lulc-cubefiles-reference-job.yml) será inserida a chave de acesso ao aos serviços do projeto Brazil Data Cube, na variável `bdc_access_token`. Isto é necessário já que os dados utilizados são disponibilizados pelo projeto.
+
+### Branches
+
+O repositório `git` utilizado para versionar o ERC, contém duas *branches*:
+
+- [master](https://github.com/M3nin0/experiment-rep-cbersdatacube): ERC com todo o material necessário para a replicação do artigo `CBERS Data Cube`;
+- [rep-bdc-article](https://github.com/M3nin0/experiment-rep-cbersdatacube/tree/rep-bdc-article): ERC utilizado para exemplificar a possibilidade de reutilização de todo o material apresentado no ERC original. Para isso, os códigos e *workflows* criados são utilizados para a classificação de uma segunda região de estudo. Para isso, considerou-se a região de estudo apresentada no artigo `Earth Observation Data Cubes for Brazil`
 
 ### Licenses
 
