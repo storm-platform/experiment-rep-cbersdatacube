@@ -1,14 +1,14 @@
 
-# Experimento - Replicação CBERS Data Cube
+# CBERS Data Cube - Compendium de replicação
 
 [![rc](https://img.shields.io/badge/research%20compendium-ready-brightgreen)](#)
 
-Repositório com um `Executable Research Compendium` para a geração de
-mapas de Uso e Cobertura da Terra utilizando Cubos de dados de imagens
-de Sensoriamento Remoto.
+Repositório com um `Executable Research Compendium` (ERC) para a geração
+de mapas de Uso e Cobertura da Terra utilizando Cubos de dados de
+imagens de Sensoriamento Remoto.
 
-Este artigo contém o código e o *workflow* necessário para a replicação
-da metodologia apresentada em:
+Este ERC contém o código e o *workflow* necessário para a replicação da
+metodologia apresentada em:
 
 > Picoli *et al*, (2020).
 > `CBERS Data Cube: A powerful technology for mapping and monitoring brazilian biomes`.
@@ -95,7 +95,26 @@ pip install cwltool cwlref-runner
 make replicate
 ```
 
-> **Note** que para a replicação, é necessário adicionar a variável de ambiente `BDC_ACCESS_TOKEN`. Após isto, a execução está pronta para ser realizada.
+> **Note** que para a replicação, é necessário que no arquivo
+> [cwl/input/lulc-cubefiles-reference-job.yml](cwl/input/lulc-cubefiles-reference-job.yml)
+> será inserida a chave de acesso ao aos serviços do projeto Brazil Data
+> Cube, na variável `bdc_access_token`. Isto é necessário já que os
+> dados utilizados são disponibilizados pelo projeto.
+
+### Branches
+
+O repositório `git` utilizado para versionar o ERC, contém duas
+*branches*:
+
+-   [master](https://github.com/M3nin0/experiment-rep-cbersdatacube):
+    ERC com todo o material necessário para a replicação do artigo
+    `CBERS Data Cube`;
+-   [rep-bdc-article](https://github.com/M3nin0/experiment-rep-cbersdatacube/tree/rep-bdc-article):
+    ERC utilizado para exemplificar a possibilidade de reutilização de
+    todo o material apresentado no ERC original. Para isso, os códigos e
+    *workflows* criados são utilizados para a replicação de um dos mapas
+    de uso e cobertura da Terra apresentados no artigo
+    `Earth Observation Data Cubes for Brazil`
 
 ### Licenses
 
