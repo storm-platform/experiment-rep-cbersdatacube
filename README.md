@@ -111,11 +111,9 @@ pip install cwltool cwlref-runner
 make replicate
 ```
 
-> **Note** que para a replicação, é necessário que no arquivo
-> [cwl/input/lulc-cubefiles-reference-job.yml](cwl/input/lulc-cubefiles-reference-job.yml)
-> será inserida a chave de acesso ao aos serviços do projeto Brazil Data
-> Cube, na variável `bdc_access_token`. Isto é necessário já que os
-> dados utilizados são disponibilizados pelo projeto.
+> Note que para a replicação, é necessário adicionar a variável de
+> ambiente `BDC_ACCESS_TOKEN`. Após isto, a execução está pronta para
+> ser realizada.
 
 ### Branches
 
