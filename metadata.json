@@ -5,8 +5,8 @@
   },
   "metadata": {
     "resource_type": { "type": "compendium", "subtype": "compendium-research" },
-    "title": "Replication for CBERS DATA CUBE: A POWERFUL TECHNOLOGY FOR MAPPING AND MONITORING BRAZILIAN BIOMES",
-      "description": "Currently, the overwhelming amount of Earth Observation data demands new solutions regarding processing and storage. To reduce the amount of time spent in searching, downloading and pre-processing data, the remote Sensing community is coming to an agreement on the minimum amount of corrections satellite images must convey in order to reach the broadest range of applications. Satellite imagery meeting such criteria (which usually include atmospheric, radiometric and topographic corrections) are generically called Analysis Ready Data (ARD). Furthermore, ARD is being assembled into multidimensional data cubes, minimising preprocessing tasks and allowing scientists and users in general to focus on analysis. A particular instance of this is the Brazil Data Cube (BDC) project, which is processing remote sensing images of medium spatial resolution into ARD datasets and assembling them as multidimensional cubes of the Brazilian territory. For example, BDC users are released from performing tasks such as image co-registration , aerosol interference correction. This work presents a BDC proof of concept, by analysing a BDC data cube made with images from the fourth China-Brazil Earth Resources Satellite (CBERS-4) of one of the largest biodiversity hotspot in the world, the Cerrado biome. It also shows how to map and monitor land use and land cover using the CBERS data cube. We demonstrate that the CBERS data cube is effective in resolving land use and and land cover issues to meet local and national needs related to the landscape dynamics, including deforestation, carbon emissions, and public policies.",
+    "title": "Earth Observation Data Cubes for Brazil: Requirements, Methodology and Products",
+      "description": "Recently, remote sensing image time series analysis has being widely used to investigate the dynamics of environments over time. Many studies have combined image time series analysis with machine learning methods to improve land use and cover change mapping. In order to support image time series analysis, analysis-ready data (ARD) image collections have been modeled and organized as multidimensional data cubes. Data cubes can be defined as sets of time series associated with spatially aligned pixels. Based on lessons learned in the research project e-Sensing, related to national demands for land use and cover monitoring and related to state-of-the-art studies on relevant topics, we define the requirements to build Earth observation data cubes for Brazil. This paper presents the methodology to generate ARD and multidimensional data cubes from remote sensing images for Brazil. We describe the computational infrastructure that we are developing in the Brazil Data Cube project, composed of software applications and Web services to create, integrate, discover, access, and process the data sets. We also present how we are producing land use and cover maps from data cubes using image time series analysis and machine learning techniques.",
       "subjects": [
       {
         "subject": "Analysis Ready Data"
@@ -51,7 +51,7 @@
         "uri": "https://creativecommons.org/licenses/by/4.0/"
       }
     ],
-    "publication_date": "2021-04-14",
+    "publication_date": "2021-04-30",
     "creators": [{
       "person_or_org": {
         "name": "Felipe Menino Carlos",
