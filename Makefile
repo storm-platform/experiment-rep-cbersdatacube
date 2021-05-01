@@ -15,3 +15,10 @@ classifybrick:
 	mv 01_ClassifyBrick_Generated.ipynb data/derived_data/lulc_maps
 
 replicate: getdata createbrick classifybrick
+
+removeintermediate:
+	rm -rf data/derived_data/cb4_features.json \
+		data/derived_data/vrt \
+		data/derived_data/bricks \
+		data/derived_data/rasters \
+		data/derived_data/cubes_vegetation_index
