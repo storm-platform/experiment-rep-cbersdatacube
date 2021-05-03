@@ -5,7 +5,7 @@
 
 Repositório com um `Executable Research Compendium` (ERC) para a geração
 de mapas de Uso e Cobertura da Terra utilizando Cubos de dados de
-imagens de Sensoriamento Remoto.
+imagens de Satélite.
 
 Este ERC contém o código e o *workflow* necessário para a replicação da
 metodologia apresentada em:
